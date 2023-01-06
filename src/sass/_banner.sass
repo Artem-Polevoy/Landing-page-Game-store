@@ -1,0 +1,44 @@
+.banner
+    &-img
+        background: $color-blue-dark
+        grid-column: full-start / col-end 4
+        background: url(../images/banner-fone.jpg) no-repeat center/cover
+        display: grid
+        grid-template-columns: repeat(16, 1fr)
+        grid-template-rows: repeat(24, 1fr)
+        @include respond(tab-port)
+            grid-column: full-start / full-end
+            grid-template-columns: repeat(30, 1fr)
+            grid-template-rows: repeat(25, 1fr)
+        &__img-player
+            width: 100%
+            grid-row: 4 / 16
+            grid-column: 3 / 15
+            @include respond(tab-port)
+                grid-row: 2 / 15
+                grid-column: 2 / 16
+        &__img-players
+            width: 100%
+            grid-row: 10 / 20
+            grid-column: 6 / -1
+            transform: translateX(3.5rem)
+            @include respond(tab-port)
+                grid-row: 11/24
+                grid-column: 15 / 29
+                transform: translateX(0)
+
+    &-text
+        background: $color-blue-dark
+        grid-column: col-start 5 / full-end
+        display: grid
+        align-content: center
+        justify-items: start
+        padding: 9%
+        &__text
+            font-weight: 400
+            font-size: 1.6rem
+            line-height: 113%
+            color: $color-gray-light
+        @include respond(tab-port)
+            grid-column: full-start / full-end
+            

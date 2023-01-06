@@ -1,0 +1,63 @@
+.cards
+    background: $color-gray-light
+    grid-column: content-start / content-end
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+    padding: 16.037% 0
+    gap: 4rem 6rem
+    justify-content: center
+.card
+    background: $color-blue-dark
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 4.5rem 1.8rem
+    &__about
+        grid-column: 1 / -1
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-self: center
+        gap: 4.5rem 0
+        transform: translateY(14%)
+    &__title
+        background: $color-green-dark
+        justify-self: center
+        align-self: end
+        grid-column: 1/-1
+        padding: 1.5rem
+        width: 80%
+        text-align: center
+        transform: translateY(50%)
+        font-weight: 700
+        font-size: 1.6rem
+        line-height: 2rem
+        color: $color-gray-light
+    &__point
+        display: grid
+        grid-template-columns: min-content 1fr
+        gap: 0 1rem
+    &__users
+        display: grid
+        grid-template-columns: min-content 1fr
+        gap: 0 1rem
+    &__pay
+        display: grid
+        grid-template-columns: min-content 1fr
+        gap: 0 1rem
+    &__display
+        display: grid
+        grid-template-columns: min-content 1fr
+        gap: 0 1rem
+    &__img
+        width: 100%
+        grid-row: 1 / 2
+        grid-column: 1 / -1
+    &__icon
+        width: 2rem
+        height: 2rem
+    &__text
+        font-weight: 300
+        line-height: 2.0rem
+        color: $color-gray-light
+        justify-self: start
+    &__btn
+        grid-column: 1 / -1

@@ -1,0 +1,40 @@
+.gallery
+    background: $color-blue-dark
+    grid-column: full-start / full-end
+    display: grid
+    grid-template-areas: "a a b b b c d d" "a a b b b c d d" "e e b b b h h i" "e e f f g h h i" "e e f f m m m i" "j k k l m m m n" "j k k l m m m n"
+    padding: 1.1%
+    padding-bottom: 5rem
+    gap: 2.4% 1.15%
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        &-1
+            grid-area: a
+        &-2
+            grid-area: b
+        &-3
+            grid-area: c
+        &-4
+            grid-area: d
+        &-5
+            grid-area: e
+        &-6
+            grid-area: f
+        &-7
+            grid-area: g
+        &-8
+            grid-area: h
+        &-9
+            grid-area: i
+        &-10
+            grid-area: j
+        &-11
+            grid-area: k
+        &-12
+            grid-area: l
+        &-13
+            grid-area: m
+        &-14
+            grid-area: n
